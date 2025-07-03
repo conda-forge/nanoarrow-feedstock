@@ -1,13 +1,13 @@
 {% set name = "nanoarrow" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nanoarrow-{{ version }}.tar.gz
-  sha256: 5d6b6e5609671c42e9ec85b195664f8bb6d721dd3a3de56fcbd8b9ed62e38af8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nanoarrow-{{ version }}.tar.gz
+  sha256: e333e639f02d97c01834c8e3fd25fb945ed53196bdfaeb129dd5a7b9f4233d39
 
 build:
   skip: true  # [py<38]
