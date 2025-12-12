@@ -30,6 +30,7 @@ requirements:
   host:
     - python
     - meson-python
+    - python-build
     - cython
     - pip
     - zstd
