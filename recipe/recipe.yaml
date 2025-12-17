@@ -13,7 +13,7 @@ source:
   sha256: e333e639f02d97c01834c8e3fd25fb945ed53196bdfaeb129dd5a7b9f4233d39
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -22,7 +22,7 @@ requirements:
     - ${{ compiler('cxx') }}
     - ninja
     - if: build_platform != target_platform
-      then: 
+      then:
         - python
         - cross-python_${{ target_platform }}
         - cython
