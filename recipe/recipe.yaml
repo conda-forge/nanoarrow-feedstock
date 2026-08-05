@@ -20,6 +20,8 @@ outputs:
     build:
       script:
         file: build-lib
+    about:
+      license_file: LICENSE
     requirements:
       build:
         - ${{ compiler('c') }}
@@ -48,6 +50,8 @@ outputs:
     build:
       script:
         file: build
+    about:
+      license_file: LICENSE.txt
     requirements:
       build:
         - ${{ compiler('c') }}
