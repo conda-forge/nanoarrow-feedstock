@@ -1,6 +1,8 @@
 #!/bin/bash
 set -exuo pipefail
 
+cd python
+
 mkdir -p builddir
 
 if [[ "${target_platform}" != "${build_platform}" ]]; then
@@ -12,4 +14,3 @@ $PYTHON -m build -w -n -x \
     -Csetup-args=${MESON_ARGS// / -Csetup-args=} \
     || (cat builddir/meson-logs/meson-log.txt && exit 1)
 $PYTHON -m pip install -vvv dist/nanoarrow-*.whl
-
