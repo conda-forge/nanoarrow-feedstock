@@ -1,0 +1,84 @@
+schema_version: 1
+
+context:
+  name: nanoarrow
+  version: "0.9.0"
+
+recipe:
+  name: ${{ name }}-split
+  version: ${{ version }}
+
+source:
+  url: https://github.com/apache/arrow-nanoarrow/archive/refs/tags/apache-arrow-nanoarrow-${{ version }}.tar.gz
+  sha256: ff21a8286bbbb1a9d631de9af2dea07ea4aa8b8c13e22d65793fb455f41c03e5
+
+build:
+  number: 1
+
+outputs:
+  - package:
+      name: libnanoarrow
+    build:
+      script:
+        file: build-lib
+    requirements:
+      build:
+        - ${{ compiler('c') }}
+        - ${{ stdlib('c') }}
+        - cmake
+        - ninja
+      host:
+        - zstd
+        - lz4-c
+      run_exports:
+        - ${{ pin_subpackage('libnanoarrow', upper_bound='x.x.x') }}
+    tests:
+      - script:
+          - if: unix
+            then: test -f $PREFIX/include/nanoarrow/nanoarrow.h
+          - if: win
+            then: if not exist %LIBRARY_INC%\\nanoarrow\\nanoarrow.h exit 1
+
+  - package:
+      name: nanoarrow
+    build:
+      script:
+        file: build
+    requirements:
+      build:
+        - ${{ compiler('c') }}
+        - ${{ stdlib('c') }}
+        - ${{ compiler('cxx') }}
+        - ninja
+        - if: build_platform != target_platform
+          then:
+            - python
+            - cross-python_${{ target_platform }}
+            - cython
+            - meson-python
+      host:
+        - python
+        - meson-python
+        - python-build
+        - cython
+        - pip
+        - zstd
+      run:
+        - python
+        - zstd
+    tests:
+      - python:
+          pip_check: true
+          imports:
+            - nanoarrow
+
+about:
+  summary: Python bindings to the nanoarrow C library
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  homepage: https://arrow.apache.org/nanoarrow/
+  repository: https://github.com/apache/arrow-nanoarrow
+
+extra:
+  recipe-maintainers:
+    - paleolimbot
