@@ -8,16 +8,15 @@ recipe:
   name: ${{ name }}-split
   version: ${{ version }}
 
-source:
-  url: https://github.com/apache/arrow-nanoarrow/archive/refs/tags/apache-arrow-nanoarrow-${{ version }}.tar.gz
-  sha256: 22c3edeaa5cb384c6da091f32a4e1c937779f2d62f84d646028de658b03d4385
-
 build:
   number: 1
 
 outputs:
   - package:
       name: libnanoarrow
+    source:
+      url: https://github.com/apache/arrow-nanoarrow/archive/refs/tags/apache-arrow-nanoarrow-${{ version }}.tar.gz
+      sha256: 22c3edeaa5cb384c6da091f32a4e1c937779f2d62f84d646028de658b03d4385
     build:
       script:
         file: build-lib
@@ -43,6 +42,9 @@ outputs:
 
   - package:
       name: nanoarrow
+    source:
+      url: https://pypi.org/packages/source/n/nanoarrow/nanoarrow-${{ version }}.tar.gz
+      sha256: 1ce15bbed8532839347faa78824c5dbd3769bff60661003e34c6fba5dd881bd3
     build:
       script:
         file: build
@@ -77,7 +79,7 @@ outputs:
 about:
   summary: Python bindings to the nanoarrow C library
   license: Apache-2.0
-  license_file: LICENSE.txt
+  license_file: LICENSE
   homepage: https://arrow.apache.org/nanoarrow/
   repository: https://github.com/apache/arrow-nanoarrow
 

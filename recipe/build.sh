@@ -1,8 +1,6 @@
 #!/bin/bash
 set -exuo pipefail
 
-cd python
-
 mkdir -p builddir
 
 if [[ "${target_platform}" != "${build_platform}" ]]; then
