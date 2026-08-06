@@ -21,7 +21,7 @@ outputs:
       script:
         file: build-lib
     about:
-      license_file: LICENSE
+      license_file: LICENSE.txt
     requirements:
       build:
         - ${{ compiler('c') }}
@@ -83,7 +83,7 @@ outputs:
 about:
   summary: Python bindings to the nanoarrow C library
   license: Apache-2.0
-  license_file: LICENSE
+  license_file: LICENSE.txt
   homepage: https://arrow.apache.org/nanoarrow/
   repository: https://github.com/apache/arrow-nanoarrow
 
