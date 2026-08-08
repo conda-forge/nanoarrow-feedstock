@@ -1,5 +1,5 @@
-About nanoarrow-feedstock
-=========================
+About libnanoarrow-feedstock
+============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nanoarrow-feedstock/blob/main/LICENSE.txt)
 
@@ -36,73 +36,10 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>osx_64_python3.10.____cpython</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.13.____cp313</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.14.____cp314</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.11.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.11.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.12.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.12.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.13.____cp313</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.13.____cp313" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.14.____cp314</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21399&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/nanoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -118,54 +55,99 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libnanoarrow-green.svg)](https://anaconda.org/conda-forge/libnanoarrow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libnanoarrow.svg)](https://anaconda.org/conda-forge/libnanoarrow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libnanoarrow.svg)](https://anaconda.org/conda-forge/libnanoarrow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libnanoarrow.svg)](https://anaconda.org/conda-forge/libnanoarrow) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-nanoarrow-green.svg)](https://anaconda.org/conda-forge/nanoarrow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nanoarrow.svg)](https://anaconda.org/conda-forge/nanoarrow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nanoarrow.svg)](https://anaconda.org/conda-forge/nanoarrow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nanoarrow.svg)](https://anaconda.org/conda-forge/nanoarrow) |
 
-Installing nanoarrow
-====================
+Installing libnanoarrow
+=======================
 
-Installing `nanoarrow` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `libnanoarrow` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `nanoarrow` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
-conda install nanoarrow
+conda install libnanoarrow nanoarrow
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
-mamba install nanoarrow
+mamba install libnanoarrow nanoarrow
 ```
 
-It is possible to list all of the versions of `nanoarrow` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
 
 ```
-conda search nanoarrow --channel conda-forge
+# for adding to your local project
+pixi add libnanoarrow nanoarrow
+# for installing globally
+pixi global install libnanoarrow nanoarrow
 ```
 
-or with `mamba`:
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `libnanoarrow` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
-mamba search nanoarrow --channel conda-forge
+conda search libnanoarrow --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With mamba</summary>
+
+```
+mamba search libnanoarrow --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search libnanoarrow --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search nanoarrow --channel conda-forge
+mamba repoquery search libnanoarrow --channel conda-forge
 
-# List packages depending on `nanoarrow`:
-mamba repoquery whoneeds nanoarrow --channel conda-forge
+# List packages depending on `libnanoarrow`:
+mamba repoquery whoneeds libnanoarrow --channel conda-forge
 
-# List dependencies of `nanoarrow`:
-mamba repoquery depends nanoarrow --channel conda-forge
+# List dependencies of `libnanoarrow`:
+mamba repoquery depends libnanoarrow --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -209,17 +191,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating nanoarrow-feedstock
-============================
+Updating libnanoarrow-feedstock
+===============================
 
-If you would like to improve the nanoarrow recipe or build a new
+If you would like to improve the libnanoarrow recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/nanoarrow-feedstock are
+Note that all branches in the conda-forge/libnanoarrow-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
