@@ -9,7 +9,7 @@ recipe:
   version: ${{ version }}
 
 build:
-  number: 3
+  number: 4
 
 outputs:
   - package:
