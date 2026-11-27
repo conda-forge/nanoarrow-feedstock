@@ -26,4 +26,4 @@ python:
 target_platform:
 - win-arm64
 zstd:
-- '1.5'
+- '1.6'
