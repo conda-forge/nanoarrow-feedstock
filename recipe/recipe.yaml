@@ -9,7 +9,7 @@ recipe:
   version: ${{ version }}
 
 build:
-  number: 6
+  number: 7
 
 outputs:
   - package:
@@ -29,7 +29,7 @@ outputs:
         - ${{ stdlib('c') }}
         - cmake
         - ninja
-        - pkg-config
+        - pkgconf
       host:
         - zstd
         - lz4-c
